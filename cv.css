@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #666;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    margin: 0 -20px 10px -20px;
+    text-align: center;
+}
+
+section h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin: 5px 0 20px 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+.publications, .patents, .projects, .coursework {
+    margin-left: 20px;
+}
+
+.skills p, .hobbies p, .language-skills p, .contact p {
+    margin: 5px 0;
+}
+
+.skills h3 {
+    margin-top: 10px;
+}
+
+.publications h3, .patents h3, .projects h3 {
+    margin: 10px 0 5px;
+}
+
+.publications ul, .patents ul, .projects ul {
+    margin-left: 20px;
+}
