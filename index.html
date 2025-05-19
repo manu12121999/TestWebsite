@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best website of the world</title>
-    <style>
-        /* Add some basic styling to center the smiley */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .smiley {
-            font-size: 48px;
-            color: #f90; /* Set color to yellow */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best website of the world</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5.5em;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #333;
+    }
+    #countdown {
+      font-size: 2em;
+      color: #0077cc;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="smiley">😊 Brace yourself for the winter hike Bengisu</div>
+  <h1>Bengisu, prepare for Zugspitze.</h1>
+  <div id="countdown">Loading countdown...</div>
+
+  <script>
+    function updateCountdown() {
+      const targetDate = new Date('2025-06-15T03:00:00Z'); // 5:00 AM CET = 3:00 AM UTC
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById('countdown').textContent = 'The time has come!';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById('countdown').textContent = 
+        `Only ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds left`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
 </body>
 </html>
