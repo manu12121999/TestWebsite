@@ -31,31 +31,16 @@
   </style>
 </head>
 <body>
-  <h1>Bengisu, prepare for Zugspitze.</h1>
-  <div id="countdown">Loading countdown...</div>
+  <h1>Personal Website - Manuel Philipp Vogel</h1>
 
-  <script>
-    function updateCountdown() {
-      const targetDate = new Date('2025-07-06T03:00:00Z'); // 5:00 AM CET = 3:00 AM UTC
-      const now = new Date();
-      const diff = targetDate - now;
-
-      if (diff <= 0) {
-        document.getElementById('countdown').textContent = 'The time has come!';
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
-
-      document.getElementById('countdown').textContent = 
-        `Only ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds left`;
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+  <p>
+    <a href="https://www.linkedin.com/in/manuel-philipp-vogel/" target="_blank">
+      Visit my LinkedIn
+    </a>
+  <p></p>
+    <a href="https://manuelvogel.de/cv" class="cv">
+      View my Projects, Papers, Patents and CV
+    </a>
+  </p>
 </body>
 </html>
